@@ -1,0 +1,54 @@
+{
+  "title": "Assignment Tool for Course",
+  "issuer": "https://canvas.instructure.com",
+  "scopes": [
+    "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem.readonly",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly",
+    "https://purl.imsglobal.org/spec/lti-ags/scope/score",
+    "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly",
+    "https://canvas.instructure.com/lti/public_jwk/scope/update",
+    "https://canvas.instructure.com/lti/account_lookup/scope/show",
+    "https://canvas.instructure.com/lti-ags/progress/scope/show",
+    "https://canvas.instructure.com/lti/page_content/show"
+  ],
+  "placement": {
+    "type": "assignment",
+    "message_type": "LtiDeepLinkingRequest",
+    "target_link_uri": "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/launch",
+    "deep_linking_supported": true
+  },
+  "extensions": [
+    {
+      "platform": "canvas.instructure.com",
+      "settings": {
+        "platform": "canvas.instructure.com",
+        "placements": [
+          {
+            "placement": "link_selection",
+            "message_type": "LtiDeepLinkingRequest",
+            "target_link_uri": "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/launch"
+          },
+          {
+            "placement": "assignment_selection",
+            "message_type": "LtiDeepLinkingRequest",
+            "target_link_uri": "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/launch"
+          }
+        ]
+      },
+      "privacy_level": "public"
+    }
+  ],
+  "public_jwk": {},
+  "description": "This tool allows instructors to create and manage assignments directly within the LMS, using deep linking to embed specific assignments into course modules.",
+  "custom_fields": {
+    "course_id": "$Course.id",
+    "user_email": "$User.email"
+  },
+  "redirect_uris": [
+    "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/launch"
+  ],
+  "public_jwk_url": "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/jwks.json",
+  "target_link_uri": "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/launch",
+  "oidc_initiation_url": "https://d644-2409-40c4-1a1-63be-4ce7-aefe-e16-6420.ngrok-free.app/lti/auth/token"
+}
